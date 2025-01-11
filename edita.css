@@ -1,0 +1,23 @@
+:root {
+  --base: #24273a;
+}
+
+body {
+  background-color: var(--base);
+  margin: 0;
+  padding; 0;
+}
+
+main {
+  padding: 2em;
+}
+
+#langs button {
+  height: 3em;
+}
+
+#editor {
+  background-color: red;
+  height: calc(100vh - 7em);
+  width: 100%;
+}
