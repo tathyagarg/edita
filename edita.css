@@ -1,5 +1,11 @@
 :root {
   --base: #24273a;
+  --surface: #494d64;
+  --text: #cad3f5;
+
+  --overlay: #6e738d;
+
+  --sapphire: #7dc4e4;
 }
 
 body {
@@ -13,11 +19,33 @@ main {
 }
 
 #langs button {
-  height: 3em;
+  height: 2em;
+  background-color: var(--surface);
+  border: 0;
+  font-size: 1em;
+
+  color: var(--text);
+  cursor: pointer;
+  border-radius: .5em .5em 0 0;
+  border-top: 2px solid var(--overlay);
+  border-left: 2px solid var(--overlay);
+  border-right: 2px solid var(--overlay);
+
+  padding: 0 .75em;
+
+  &:first-child {
+    margin-right: .5em;
+  }
+
+  &[data-active="true"] {
+    border-top: 2px solid var(--sapphire);
+    border-left: 2px solid var(--sapphire);
+    border-right: 2px solid var(--sapphire);
+  }
 }
 
 #editor {
   background-color: red;
-  height: calc(100vh - 7em);
+  height: calc(100vh - 6em);
   width: 100%;
 }
